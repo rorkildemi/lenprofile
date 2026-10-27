@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rorkildemi-lenprofile"
+version = "0.1.0"
+description = "统计长度分位数，估算被截断样本的比例与被截断的内容类型"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rorkildemi" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://rorkildemi.github.io"
+Repository = "https://github.com/rorkildemi/lenprofile"
+Issues = "https://github.com/rorkildemi/lenprofile/issues"
+
+[project.scripts]
+lenprofile = "lenprofile:main"
+
+[tool.setuptools]
+py-modules = ["lenprofile"]
